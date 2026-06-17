@@ -22,7 +22,6 @@ const buildTargets = [
   "packages/diagnostics",
   "apps/daemon",
   "tools/dev",
-  "tools/pack",
   "tools/serve",
 ];
 

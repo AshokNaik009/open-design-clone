@@ -9,7 +9,8 @@
     "apps/web",
     "apps/landing-page",
     "apps/telemetry-worker",
-    "tools/*",
+    "tools/dev",
+    "tools/serve",
     "e2e"
   ],
   "description": "Local-first design product: detects your installed code-agent CLI, runs design skills + design systems, streams artifacts into a sandboxed preview.",
@@ -20,7 +21,6 @@
   "scripts": {
     "postinstall": "node ./scripts/postinstall.mjs",
     "tools-dev": "tools-dev",
-    "tools-pack": "tools-pack",
     "tools-serve": "tools-serve",
     "nix:update-hash": "node --experimental-strip-types ./scripts/update-nix-pnpm-deps-hash.ts",
     "guard": "tsx ./scripts/guard.ts && node --import tsx --test scripts/style-policy.test.ts scripts/product-neutrality.test.ts scripts/web-import-isolation.test.ts scripts/check-cross-app-imports.test.ts scripts/approve-fork-pr-workflows.test.ts scripts/postinstall.test.ts scripts/lint-craft-references.test.ts",
@@ -38,7 +38,6 @@
     "@open-design/components": "*",
     "@open-design/daemon": "*",
     "@open-design/tools-dev": "*",
-    "@open-design/tools-pack": "*",
     "@open-design/tools-serve": "*",
     "@types/node": "20.19.39",
     "tsx": "4.22.3",
