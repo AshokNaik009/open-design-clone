@@ -5,7 +5,10 @@
   "type": "module",
   "workspaces": [
     "packages/*",
-    "apps/*",
+    "apps/daemon",
+    "apps/web",
+    "apps/landing-page",
+    "apps/telemetry-worker",
     "tools/*",
     "e2e"
   ],
